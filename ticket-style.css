@@ -1,0 +1,105 @@
+/* Modal styles */
+.modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: min-content;
+    max-width: 90vw;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #aaa;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Ticket styles */
+  .ticket {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .ticket h2 {
+    margin-top: 0;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .ticket h3 {
+    font-size: 24px;
+  }
+
+  .segments-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .segment {
+    min-width: 300px;
+  }
+
+  .ticket p {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .ticket .price {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .ticket .departure,
+  .ticket .arrival {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+
+  .ticket .departure {
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ticket .departure h3,
+  .ticket .arrival h3 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .ticket .departure p,
+  .ticket .arrival p {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
